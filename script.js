@@ -1,32 +1,8 @@
-new Vue({
-  el: '#app',
-  data: {
-      active: 0,
-      animation: 'fadeUp',
-      previous: 0,
-      className: ''
-  },
-  methods: {
-      selectedContent(index) {
-          this.active = index;
+const switcher = document.querySelector('#theme-switcher');
+const doc = document.firstElementChild;
 
-          if(index > this.previous) {
-              this.animation = 'fadeUp';
-          }
+switcher.addEventListener('input', (e) =>
+setTheme(e.target.value));
 
-          if(index < this.previous) {
-              this.animation = 'fadeDown';
-          }
-
-          this.previous = index;
-
-          if(index === 1) {
-              this.className = 'activeSecond'
-          } else if(index === 2) {
-              this.className = 'activeThirst'
-          } else {
-              this.className = ''
-          }
-      }
-  }
-})
+const setTheme = (theme) =>
+doc.setAttribute('color-scheme', theme);
