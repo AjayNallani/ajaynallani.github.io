@@ -25,7 +25,7 @@ export default class World
         
         const cube = new THREE.Mesh(
             new THREE.BoxGeometry(1, 1, 1),
-            new THREE.MeshBasicMaterial({ color: 0x84C0C6, })//map: this.resources.items.lennaTexture })
+            new THREE.MeshBasicMaterial({ color: 0x585481 })
         )
         this.scene.add(cube)        
     }
