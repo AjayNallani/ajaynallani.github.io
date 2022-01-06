@@ -5,26 +5,26 @@ This is a landing page for the all the projects
 ## Setting up
 
 Install the packages required
-'''bash
+```bash
 npm install
-'''
+```
 
 Running a live server to update the changes
-'''bash
+```bash
 npm run dev
-'''
+```
 
 Build the site with required packages
-'''bash
+```bash
 npm run build
-'''
+```
 
 Install the github pages
-'''bash
+```bash
 npm install gh-pages save dev
-'''
+```
 
 Publish the built site to github pages
-'''bash 
+```bash 
 npm run deploy
-'''
+```
