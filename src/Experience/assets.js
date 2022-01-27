@@ -4,7 +4,7 @@ export default [
         data: {},
         items:
         [
-            { name: 'lennaTexture', source: '/assets/lenna.png', type: 'texture' },
+            { name: 'ajay', source: '/assets/ajay.glb'},//, type: 'texture' },
         ]
     }
 ]
